@@ -20,7 +20,7 @@ psql -h <host:port> -U <username> -P <password> -d <database_name> -a -f DROP_TA
 Generate the database diagrams
 
 `
-java -jar schemaspy-6.0.0.jar -t pgsql -db epm -host localhost -u postgres -p '123456' -o ./schemaspy -dp postgresql-42.2.5.jar -s public -noads
+java -jar ../../schemaspy-6.0.0.jar -t pgsql -db epm -host <host ip> -u <username> -p <password> -o ./schemaspy -dp ../../postgresql-42.2.5.jar -s public -noads
 `
 
 To view the generated diagrams open the index.html in ./schemaspy with a web browser (e.g. firefox schemaspy/index.html)

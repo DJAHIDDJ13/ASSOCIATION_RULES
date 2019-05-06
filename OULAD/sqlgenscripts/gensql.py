@@ -38,7 +38,7 @@ for fl in os.listdir(dataset_dir): # parse files in the dataset directory
                 f.write(insert(table, **entry)+'\n')
             print # newline
 # for the students table
-with  pen('./INSERT_DATA_students.sql', 'w') as f:
+with open('./INSERT_DATA_students.sql', 'w') as f:
     student_ids = []
     df = pd.read_csv(dataset_dir+'studentInfo.csv')
     for i in range(len(df)):
