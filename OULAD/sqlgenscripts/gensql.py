@@ -37,6 +37,8 @@ for fl in os.listdir(dataset_dir): # parse files in the dataset directory
                 # write the generated sql insert of the entry to the output file
                 f.write(insert(table, **entry)+'\n')
             print # newline
+
+
 # for the students table
 with open('./INSERT_DATA_students.sql', 'w') as f:
     student_ids = []
@@ -46,3 +48,4 @@ with open('./INSERT_DATA_students.sql', 'w') as f:
         if s_id not in student_ids:
             f.write(insert('Students', **{'id_student': s_id})+'\n')
             student_ids.append(s_id)
+
