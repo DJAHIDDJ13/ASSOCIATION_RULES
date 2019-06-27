@@ -17,7 +17,8 @@ chmod +x build.sh
 
 To generate the sql files and fill the database, visit either directories *OULAD* or *EPMDataset*  in the sub-directory *sqlgenscripts* where you'll find more information on how to run the script
 
-
+---------------------------------------------------------------------------------
+To generate the association rules you'll need to get the ip of the server running the postgreSQL database and replace it in the script as well as the username, password and database name where the datasets were inserted
 
 ---------------------------------------------------------------------------------
 You can find the datasets here:
